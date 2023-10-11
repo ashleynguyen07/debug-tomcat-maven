@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<script>
+                                                            function changeClassName() {
+                                                                var select = document.getElementById('classid');
+                                                                var selectedValue = select.options[select.selectedIndex].value;
+                                                                var selectedText = select.options[select.selectedIndex].text;
+                                                                console.log(selectedValue);
+                                                                console.log(selectedText);
+                                                                select.options[0].text = selectedText;
+
+                                                                // Lưu giá trị đã chọn vào sessionStorage
+                                                                sessionStorage.setItem('selectedClassId', selectedValue);
+
+                                                            }
+                                                            // Khi trang tải xong, lấy giá trị đã chọn từ sessionStorage và đặt nó cho thẻ select
+                                                            window.onload = function () {
+                                                                var selectedClassId = sessionStorage.getItem('selectedClassId');
+                                                                if (selectedClassId) {
+                                                                    document.getElementById('classid').value = selectedClassId;
+                                                                }
+                                                            }
+
+            </script>

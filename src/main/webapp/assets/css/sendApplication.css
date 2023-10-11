@@ -1,0 +1,120 @@
+.app {
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* Header Style  */
+.header {
+    background-color: var(--white-color);
+    height: 80px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 4px 2px -2px #ccc;
+    z-index: 3;
+}
+
+.header p {
+    color: var(--primary-color);
+}
+
+.header .navbar-logo,
+.header .navbar-school {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+}
+
+.header .navbar-logo p {
+    line-height: 30px;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-bottom: 0;
+}
+
+.header .navbar-school p {
+    line-height: 30px;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-bottom: 0;
+}
+
+/* Body Style  */
+.app-container {
+    background-color: var(--primary-color);
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 80px;
+}
+
+.box-section {
+    background-color: var(--white-color);
+    height: 100%;
+    width: 100%;
+}
+
+.table thead{
+    background-color: #2FB5FA;
+}
+
+.app-home__heading .header-name {
+    font-size: 20px;
+    padding: 10px;
+    border-bottom: 2px solid #BDBDBD;
+    font-weight: bold;
+    color: var(--primary-color);
+    position: relative;
+}
+
+.info-container .img-account-profile {
+    height: 190px;
+    border: 3px solid #ccc;
+}
+
+
+.timetable-href {
+    padding: 8px 24px;
+}
+
+.timetable-href a {
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.timetable-href a:hover {
+    text-decoration: underline;
+
+}
+
+/* registration  */
+.registration-container {
+    padding: 16px;
+}
+
+.applicate-container .applicate-btn,
+.paid-items-container .paid-item-btn,
+.applicate-container .applicate-view,
+.paid-items-container .paid-item-view {
+    border: 1px solid #ccc;
+    font-size: 18px;
+    text-align: left;
+    font-weight: 500;
+    animation: fadeIn ease-in .5s;
+}
+
+.applicate-container .applicate-btn:hover,
+.paid-items-container .paid-item-btn:hover,
+.applicate-container .applicate-view:hover,
+.paid-items-container .paid-item-view:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.applicate-container .applicate-btn,
+.paid-items-container .paid-item-btn {
+    border: 1px solid #ccc;
+    width: 300px;
+    margin-right: 8px;
+}
+

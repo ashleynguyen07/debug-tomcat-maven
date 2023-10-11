@@ -1,0 +1,236 @@
+.app {
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* Header Style  */
+.header {
+    background-color: var(--white-color);
+    height: 80px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 4px 2px -2px #ccc;
+    z-index: 3;
+}
+
+.header p {
+    color: var(--primary-color);
+}
+
+.header .navbar-logo,
+.header .navbar-school {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+}
+
+.header .navbar-logo p {
+    line-height: 30px;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-bottom: 0;
+}
+
+.header .navbar-school p {
+    line-height: 30px;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-bottom: 0;
+}
+
+/* Body Style  */
+.app-container {
+    background-color: var(--primary-color);
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 80px;
+}
+
+.box-section {
+    background-color: var(--white-color);
+    height: 1080px;
+}
+
+.app-home__heading .header-name {
+    font-size: 20px;
+    padding: 10px;
+    border-bottom: 2px solid #BDBDBD;
+    font-weight: bold;
+    color: var(--primary-color);
+    position: relative;
+}
+
+.info-container .img-account-profile {
+    height: 190px;
+    border: 3px solid #ccc;
+}
+
+
+.timetable-href {
+    padding: 8px 24px;
+}
+
+.timetable-href a {
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.timetable-href a:hover {
+    text-decoration: underline;
+
+}
+
+/* registration  */
+.registration-container {
+    padding: 16px;
+}
+
+.applicate-container .applicate-btn,
+.paid-items-container .paid-item-btn,
+.applicate-container .applicate-view,
+.paid-items-container .paid-item-view {
+    border: 1px solid #ccc;
+    font-size: 18px;
+    text-align: left;
+    font-weight: 500;
+    animation: fadeIn ease-in .5s;
+}
+
+.applicate-container .applicate-btn:hover,
+.paid-items-container .paid-item-btn:hover,
+.applicate-container .applicate-view:hover,
+.paid-items-container .paid-item-view:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.applicate-container .applicate-btn,
+.paid-items-container .paid-item-btn {
+    border: 1px solid #ccc;
+    width: 300px;
+    margin-right: 8px;
+}
+
+
+/* notification  */
+.notification-list .notificaiton-item {
+    border-bottom: 1px solid #ccc;
+}
+
+.notification-list .notificaiton-item:hover {
+    cursor: pointer;
+    background-color: #ccc;
+}
+
+.notification-list .notificaiton-item .notifi-heading {
+    display: flex;
+    justify-content: space-between;
+}
+
+.notification-list .notificaiton-item .notifi-heading .notifi-header {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.notification-list .notificaiton-item .notifi-heading .notifi-date {
+    font-size: 14px;
+}
+
+.notification-list .view-all {
+    padding: 3px;
+}
+
+.notification-list .view-all a {
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.notification-list .view-all a:hover {
+    text-decoration: underline;
+    color: var(--primary-color);
+}
+
+
+.drop-down{
+    font-size: 30px;
+}
+
+.drop-down--title{
+    height: 30px;
+    display: inline-block;
+    font-size: 20px;
+    background-color: #dbdbdb;
+    width: 75%;
+    position: relative;
+    left: 10%;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    color: #888;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.drop-down--content{
+    position: relative;
+    max-height: 60px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+.drop-down-content{
+    position: relative;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+.drop-down-content.open-menu{
+    max-height: 60px;
+}
+
+.dropdown--icon{
+    position: absolute;
+    font-size: 20px;
+    top: 5px;
+    right: 50px;
+    color: #888;
+}
+
+ul{
+    list-style: none;
+    background-color: #fff;
+    width: 70%;
+    position: relative;
+    left: 10%;
+    font-size: 15px;
+ 
+}
+
+ul li{
+    height: 20px;
+    width: 100%;
+    border: solid 1px #dbdbdb;
+    box-sizing: border-box;
+    
+}
+
+ul li a{
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    color: #888;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.table{
+    font-size: 20px;
+}
+
+.table thead{
+    background-color: #2FB5FA;
+}

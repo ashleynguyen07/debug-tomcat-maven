@@ -1,0 +1,241 @@
+.app {
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* Header Style  */
+.header {
+    background-color: var(--white-color);
+    height: 80px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 4px 2px -2px #ccc;
+    z-index: 3;
+}
+
+.header p {
+    color: var(--primary-color);
+}
+
+.header .navbar-logo,
+.header .navbar-school {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+}
+
+.header .navbar-logo p {
+    line-height: 30px;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-bottom: 0;
+}
+
+.header .navbar-school p {
+    line-height: 30px;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-bottom: 0;
+}
+
+/* Body Style  */
+.app-container {
+    background-color: var(--primary-color);
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 80px;
+}
+
+.box-section {
+    background-color: var(--white-color);
+    color: var(--primary-color);
+    /* position: absolute; */
+    /* height: 400px; */
+    height: fit-content;
+}
+
+.send-notification {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.noti-select {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: -5px;
+}
+
+.noti-textarea {
+    font-size: 15px;
+}
+
+.btn-submit {
+    background-color: var(--primary-color);
+    border-radius: 0.05 !important;
+    font-size: 15px;
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 10% 20% 50% 20%;
+    gap: 10px;
+    /* padding: 10px; */
+    text-decoration: none;
+}
+a:hover {
+    background-color: #ddd; 
+    color: var(--primary-color); 
+  }
+
+.grid-item {
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.8); */
+    padding: 10px;
+    font-size: 15px;
+    color: #000;
+    /* text-align: center; */
+}
+.grid-header {
+    font-weight: bold;
+}
+
+.app-home__heading .header-name {
+    font-size: 20px;
+    padding: 10px;
+    border-bottom: 2px solid var(--primary-color);
+    font-weight: bold;
+    color: var(--primary-color);
+    position: relative;
+}
+
+.header-name i {
+    color: var(--primary-color);
+}
+
+.info-container .img-account-profile {
+    height: 190px;
+    border: 3px solid #ccc;
+}
+
+.student-list-info .list-info {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.student-list-info .list-info .info-href-contain:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.student-list-info .list-info .info-href-contain a {
+    text-decoration: none;
+}
+
+.info-href-contain i {
+    width: 20px;
+}
+
+.info-container .img-teacher-profile {
+    height: 80px;
+    border: 3px solid #ccc;
+}
+
+.timetable-href {
+    padding: 8px 24px;
+}
+
+.timetable-href a {
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.timetable-href a:hover {
+    text-decoration: underline;
+
+}
+
+/* registration  */
+.registration-container {
+    padding: 16px;
+}
+
+.applicate-container .applicate-btn,
+.paid-items-container .paid-item-btn,
+.applicate-container .applicate-view,
+.paid-items-container .paid-item-view {
+    border: 1px solid #ccc;
+    font-size: 18px;
+    text-align: left;
+    font-weight: 500;
+    animation: fadeIn ease-in .5s;
+}
+
+.applicate-container .applicate-btn:hover,
+.paid-items-container .paid-item-btn:hover,
+.applicate-container .applicate-view:hover,
+.paid-items-container .paid-item-view:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.applicate-container .applicate-btn,
+.paid-items-container .paid-item-btn {
+    border: 1px solid #ccc;
+    width: 300px;
+    margin-right: 8px;
+}
+
+
+/* notification  */
+.notification-list .notificaiton-item {
+    border-bottom: 1px solid #ccc;
+}
+
+.notification-list .notificaiton-item:hover {
+    cursor: pointer;
+    background-color: #ccc;
+}
+
+.notification-list .notificaiton-item .notifi-heading {
+    display: flex;
+    justify-content: space-between;
+}
+
+.notification-list .notificaiton-item .notifi-heading .notifi-header {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.notification-list .notificaiton-item .notifi-heading .notifi-date {
+    font-size: 14px;
+}
+
+.notification-list .view-all {
+    padding: 3px;
+}
+
+.notification-list .view-all a {
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.notification-list .view-all a:hover {
+    text-decoration: underline;
+    color: var(--primary-color);
+}
+
+.header-notice {
+    position: absolute;
+    top: 4px;
+    left: 25px;
+    padding: 0px 5px;
+    border-radius: 10px;
+    font-size: 12px;
+    line-height: 16px;
+    background-color: red;
+    color: white;
+}
